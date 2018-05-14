@@ -5,6 +5,12 @@ Encadrer un texte
 .DESCRIPTION
 Fonction permettant d'encadrer un texte
 
+.NOTES    
+    
+    Version : 2.0
+    Author: Romain LEON
+    DateCreated: 01/01/2018
+
 .PARAMETER largeur
 Nombre de fois ou le caractére choisi sera répété. Si le texte est trop grand la largeur est automatiquement agrandie.
 
