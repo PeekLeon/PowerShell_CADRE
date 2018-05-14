@@ -38,6 +38,6 @@ cadre -text "$env:USERNAME `n $(get-date)"  -caractere "*" -textalign "center" -
 Encadre en jaune *"$env:USERNAME"* avec un cadre simple, un texte aligner au centre et une largeur de 80 caractéres.
 
 ```powershell 
-Write-Host -ForegroundColor Yellow $()cadre -text "$env:USERNAME" -border simple -textalign center -largeur 80
+Write-Host -ForegroundColor Yellow $(cadre -text "$env:USERNAME" -border simple -textalign center -largeur 80)
 ``` 
 
