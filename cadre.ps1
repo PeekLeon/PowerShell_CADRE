@@ -100,5 +100,3 @@ function cadre([int]$largeur=1, [string]$caractere="-", [string]$text, [string]$
 
     Return "$top`n$contenu$Bottom"
 }
-
-cadre -text "123" -largeur 100
