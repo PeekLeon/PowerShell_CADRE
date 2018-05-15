@@ -17,27 +17,33 @@ Permet d'encadrer un text automatiquement  en powershell
 
 # Exemples
 
-Encadre *"$env:USERNAME"* avec un cadre simple, un texte aligner au centre et une largeur de 80 caractéres.
+![cadre_simple](Exemples/cadre_simple.png)
 
 ```powershell 
 cadre -text "$env:USERNAME" -border simple -textalign center -largeur 80
 ```
 
-Encadre *"$env:USERNAME"* avec le caractére "*", un texte aligner au centre et une largeur de 80 caractéres.
+![cadre_etoiles](Exemples/cadre_etoiles.png)
 
 ```powershell 
 cadre -text "$env:USERNAME" -caractere "*" -textalign center -largeur 80
 ```
-
-Encadre *"$env:USERNAME"* et la date (`n pour le retour à la ligne) avec le caractére "*", un texte aligner au centre et une largeur de 80 caractéres.
+![cadre_double_2lignes](Exemples/cadre_double_2lignes.png)
 
 ```powershell 
-cadre -text "$env:USERNAME `n $(get-date)"  -caractere "*" -textalign "center" -largeur 80
+cadre -text "$env:USERNAME `n $(get-date)"  -border double -textalign "center" -largeur 80
 ```
 
-Encadre en jaune *"$env:USERNAME"* avec un cadre simple, un texte aligner au centre et une largeur de 80 caractéres.
+![cadre_simple_jaune](Exemples/cadre_simple_jaune.png)
+
 
 ```powershell 
 Write-Host -ForegroundColor Yellow $(cadre -text "$env:USERNAME" -border simple -textalign center -largeur 80)
 ``` 
 
+![cadre_espace_bg-noire_couleur-jaune](Exemples/cadre_espace_bg-noire_couleur-jaune.png)
+
+
+```powershell 
+Write-Host -BackgroundColor black  -ForegroundColor Yellow $(cadre -text "PeekLeon" -caractere " " -textalign center -largeur 80)
+``` 
